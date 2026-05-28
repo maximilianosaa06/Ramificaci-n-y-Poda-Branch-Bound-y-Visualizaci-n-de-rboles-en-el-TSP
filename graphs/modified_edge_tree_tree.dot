@@ -1,0 +1,102 @@
+digraph TSPTree {
+    node [shape=box, style=filled];
+    0 [label="N0
+C:0.0
+B:0.0", fillcolor=lightblue];
+    0 -> 1;
+    0 -> 2;
+    0 -> 3;
+    0 -> 4;
+    1 [label="N1
+C:14.0
+B:48.0", fillcolor=red];
+    2 [label="N2
+C:4.0
+B:21.0", fillcolor=lightblue];
+    2 -> 18;
+    2 -> 19;
+    2 -> 20;
+    3 [label="N3
+C:10.0
+B:37.0", fillcolor=lightblue];
+    3 -> 12;
+    3 -> 13;
+    3 -> 14;
+    4 [label="N4
+C:20.0
+B:40.0", fillcolor=lightblue];
+    4 -> 5;
+    4 -> 6;
+    4 -> 7;
+    18 [label="N18
+C:9.0
+B:13.0", fillcolor=lightblue];
+    18 -> 21;
+    18 -> 22;
+    19 [label="N19
+C:20.0
+B:42.0", fillcolor=red];
+    20 [label="N20
+C:103.0
+B:118.0", fillcolor=red];
+    12 [label="N12
+C:17.0
+B:215.0", fillcolor=red];
+    13 [label="N13
+C:26.0
+B:48.0", fillcolor=red];
+    14 [label="N14
+C:12.0
+B:24.0", fillcolor=lightblue];
+    14 -> 15;
+    14 -> 16;
+    5 [label="N5
+C:30.0
+B:62.0", fillcolor=red];
+    6 [label="N6
+C:119.0
+B:134.0", fillcolor=red];
+    7 [label="N7
+C:22.0
+B:34.0", fillcolor=lightblue];
+    7 -> 8;
+    7 -> 9;
+    21 [label="N21
+C:17.0
+B:17.0", fillcolor=lightblue];
+    21 -> 24;
+    22 [label="N22
+C:21.0
+B:21.0", fillcolor=lightblue];
+    22 -> 23;
+    15 [label="N15
+C:22.0
+B:22.0", fillcolor=lightblue];
+    15 -> 17;
+    16 [label="N16
+C:111.0
+B:111.0", fillcolor=red];
+    8 [label="N8
+C:29.0
+B:29.0", fillcolor=lightblue];
+    8 -> 11;
+    9 [label="N9
+C:38.0
+B:38.0", fillcolor=lightblue];
+    9 -> 10;
+    24 [label="N24
+C:37.0
+B:37.0", fillcolor=green];
+    23 [label="N23
+C:34.0
+B:34.0", fillcolor=green];
+    17 [label="N17
+C:33.0
+B:33.0", fillcolor=green];
+    11 [label="N11
+C:40.0
+B:40.0", fillcolor=green];
+    10 [label="N10
+C:57.0
+B:57.0", fillcolor=green];
+}

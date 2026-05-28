@@ -1,0 +1,146 @@
+digraph TSPTree {
+    node [shape=box, style=filled];
+    0 [label="N0
+C:0.0
+B:0.0", fillcolor=lightblue];
+    0 -> 1;
+    0 -> 2;
+    0 -> 3;
+    0 -> 4;
+    1 [label="N1
+C:14.0
+B:23.0", fillcolor=lightblue];
+    1 -> 16;
+    1 -> 17;
+    1 -> 18;
+    2 [label="N2
+C:4.0
+B:21.0", fillcolor=lightblue];
+    2 -> 5;
+    2 -> 6;
+    2 -> 7;
+    3 [label="N3
+C:10.0
+B:26.0", fillcolor=lightblue];
+    3 -> 22;
+    3 -> 23;
+    3 -> 24;
+    4 [label="N4
+C:20.0
+B:40.0", fillcolor=red];
+    16 [label="N16
+C:21.0
+B:25.0", fillcolor=lightblue];
+    16 -> 19;
+    16 -> 20;
+    17 [label="N17
+C:22.0
+B:29.0", fillcolor=lightblue];
+    17 -> 32;
+    17 -> 33;
+    18 [label="N18
+C:26.0
+B:58.0", fillcolor=red];
+    5 [label="N5
+C:9.0
+B:13.0", fillcolor=lightblue];
+    5 -> 8;
+    5 -> 9;
+    6 [label="N6
+C:20.0
+B:42.0", fillcolor=red];
+    7 [label="N7
+C:7.0
+B:22.0", fillcolor=lightblue];
+    7 -> 12;
+    7 -> 13;
+    22 [label="N22
+C:17.0
+B:24.0", fillcolor=lightblue];
+    22 -> 25;
+    22 -> 26;
+    23 [label="N23
+C:26.0
+B:48.0", fillcolor=red];
+    24 [label="N24
+C:12.0
+B:24.0", fillcolor=lightblue];
+    24 -> 27;
+    24 -> 28;
+    19 [label="N19
+C:37.0
+B:37.0", fillcolor=red];
+    20 [label="N20
+C:24.0
+B:24.0", fillcolor=lightblue];
+    20 -> 21;
+    32 [label="N32
+C:38.0
+B:38.0", fillcolor=red];
+    33 [label="N33
+C:24.0
+B:24.0", fillcolor=lightblue];
+    33 -> 34;
+    8 [label="N8
+C:17.0
+B:17.0", fillcolor=lightblue];
+    8 -> 10;
+    9 [label="N9
+C:21.0
+B:21.0", fillcolor=lightblue];
+    9 -> 11;
+    12 [label="N12
+C:17.0
+B:17.0", fillcolor=lightblue];
+    12 -> 15;
+    13 [label="N13
+C:9.0
+B:9.0", fillcolor=lightblue];
+    13 -> 14;
+    25 [label="N25
+C:24.0
+B:24.0", fillcolor=lightblue];
+    25 -> 31;
+    26 [label="N26
+C:29.0
+B:29.0", fillcolor=lightblue];
+    26 -> 35;
+    27 [label="N27
+C:22.0
+B:22.0", fillcolor=lightblue];
+    27 -> 30;
+    28 [label="N28
+C:16.0
+B:16.0", fillcolor=lightblue];
+    28 -> 29;
+    21 [label="N21
+C:37.0
+B:37.0", fillcolor=green];
+    34 [label="N34
+C:32.0
+B:32.0", fillcolor=green];
+    10 [label="N10
+C:37.0
+B:37.0", fillcolor=green];
+    11 [label="N11
+C:34.0
+B:34.0", fillcolor=green];
+    15 [label="N15
+C:36.0
+B:36.0", fillcolor=green];
+    14 [label="N14
+C:30.0
+B:30.0", fillcolor=green];
+    31 [label="N31
+C:45.0
+B:45.0", fillcolor=green];
+    35 [label="N35
+C:37.0
+B:37.0", fillcolor=green];
+    30 [label="N30
+C:33.0
+B:33.0", fillcolor=green];
+    29 [label="N29
+C:35.0
+B:35.0", fillcolor=green];
+}

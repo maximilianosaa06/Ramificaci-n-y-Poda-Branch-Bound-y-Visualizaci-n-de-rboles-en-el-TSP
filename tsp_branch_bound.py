@@ -3,6 +3,7 @@ Implementación del algoritmo Branch & Bound para resolver el Problema del Viaja
 """
 
 import numpy as np
+import heapq
 from node import Node
 from utils import reduce_matrix
 from collections import deque
@@ -53,8 +54,13 @@ class TSPBranchBound:
             queue = [self.root]  # Pila
             get_next = lambda q: q.pop()  # LIFO
         else:  # best_first
-            queue = [self.root]
-            get_next = lambda q: min(q, key=lambda x: x.bound) if q else None
+            queue = [(self.root.bound, self.root.node_id, self.root)]  # Heap: (bound, node_id, node)
+            def get_next_best(q):
+                if q:
+                    _, _, node = heapq.heappop(q)
+                    return node
+                return None
+            get_next = get_next_best
         
         # Branch & Bound principal
         while queue:
@@ -81,7 +87,10 @@ class TSPBranchBound:
                 else:
                     # Agregar a la cola si no está podado
                     if child.bound < self.best_cost:
-                        queue.append(child)
+                        if strategy == 'lifo':
+                            queue.append(child)
+                        else:  # best_first with heap
+                            heapq.heappush(queue, (child.bound, child.node_id, child))
                     else:
                         child.pruned = True
                         self.pruned_count += 1
