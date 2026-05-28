@@ -1,0 +1,38 @@
+{
+  "id": 0,
+  "path": [
+    0
+  ],
+  "cost": 0.0,
+  "bound": 40.0,
+  "pruned": false,
+  "is_solution": false,
+  "children": [
+    {
+      "id": 1,
+      "path": [
+        0,
+        1
+      ],
+      "cost": 10.0,
+      "bound": 50.0,
+      "pruned": false,
+      "is_solution": false,
+      "children": [
+        {
+          "id": 2,
+          "path": [
+            0,
+            1,
+            2
+          ],
+          "cost": 45.0,
+          "bound": 65.0,
+          "pruned": false,
+          "is_solution": false,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

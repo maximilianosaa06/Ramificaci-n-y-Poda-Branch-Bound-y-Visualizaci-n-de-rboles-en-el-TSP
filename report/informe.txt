@@ -1,0 +1,38 @@
+# Informe del Laboratorio
+
+## TSP Branch & Bound - Visualización de Árboles de Búsqueda
+
+**Alumno**: Maximiliano Saavedra
+**Fecha**: 28 de Mayo de 2026
+
+---
+
+## Resumen Ejecutivo
+
+Este laboratorio implementa y compara diferentes estrategias del algoritmo Branch & Bound para resolver el Problema del Viajante (TSP).
+
+### Resultados Principales
+
+| Estrategia | Costo Óptimo | Nodos Explorados | Nodos Podados |
+|-----------|-------------|-----------------|---------------|
+| LIFO | 80.00 | 24 | 8 |
+| Best-First | 80.00 | 18 | 14 |
+| Matriz Modificada | 105.00 | 24 | 8 |
+| Cota Ingenua | 80.00 | 24 | 8 |
+
+---
+
+## Conclusiones
+
+- **Best-First** es más eficiente en términos de nodos explorados
+- La **reducción de matrices** es crucial para cotas efectivas
+- La **poda** reduce significativamente el espacio de búsqueda
+- El costo relativo de aristas afecta dramáticamente el resultado
+
+---
+
+**Nota**: Este es un archivo placeholder. El informe PDF completo debe incluir:
+- Análisis detallado de complejidad
+- Gráficos de los árboles de búsqueda
+- Comparativa experimental
+- Conclusiones y recomendaciones

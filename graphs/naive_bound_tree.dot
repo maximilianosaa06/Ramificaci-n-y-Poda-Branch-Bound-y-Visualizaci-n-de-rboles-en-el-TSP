@@ -1,0 +1,8 @@
+digraph TSPTree {
+    node [shape=box, style=filled];
+    0 [label="N0\nC:0.0\nB:40.0", fillcolor=lightblue];
+    1 [label="N1\nC:10.0\nB:50.0", fillcolor=lightblue];
+    0 -> 1;
+    2 [label="N2\nC:45.0\nB:65.0", fillcolor=lightblue];
+    1 -> 2;
+}
